@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>漫步月球</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/swiper.min.css" rel="stylesheet" type="text/css">
+	<style>
+		html,
+		body {
+			height: 100%;
+		}
+
+		h1,
+		h2 {
+			font-weight: normal;
+		}
+
+		body {
+			padding: 0;
+			margin: 0;
+			margin: 0 auto;
+			max-width: 640px;
+			min-width: 300px;
+			font-family: "微软雅黑", "黑体", "宋体";
+		}
+
+		#top {
+			height: 100%;
+			background-image: url(images/top-v.jpg);
+			background-size: cover;
+			position: relative;
+		}
+
+		#arrow {
+			position: absolute;
+			bottom: 5%;
+			left: 50%;
+			margin: 0 0 0 -10px;
+		}
+
+		section {
+			padding: 0 10px;
+		}
+
+		p {
+			font-size: 16px;
+			line-height: 1.5;
+		}
+
+		section img {
+			max-width: 100%;
+			height: auto;
+		}
+
+		section video {
+			max-width: 100%;
+			height: auto;
+		}
+
+		.swiper-container {
+			width: 100%;
+			height: 100%;
+		}
+
+		@keyframes updown {
+			0% {
+				transform: translateY(0px);
+			}
+			100% {
+				transform: translateY(15px);
+			}
+		}
+
+		@-webkit-keyframes updown {
+			0% {
+				-webkit-transform: translateY(0px);
+			}
+			100% {
+				-webkit-transform: translateY(15px);
+			}
+		}
+
+		.updownAni {
+			animation: updown 1s infinite alternate;
+		}
+
+		#nav {
+			width: 30px;
+			height: 30px;
+			box-sizing: border-box;
+			background-color: #666;
+			border-radius: 50%;
+			position: fixed;
+			right: 15px;
+			bottom: 10px;
+			z-index: 999;
+		}
+
+		
+	</style>
+
+</head>
+
+<body>
+	<div id="nav">
+		<div class="fat-nav">
+			<div class="fat-nav__wrapper">
+				<ul>
+					<li>
+						<a href="index.html">首页</a>
+					</li>
+					<li>
+						<a href="main1.html">月兔现身</a>
+					</li>
+					<li>
+						<a href="main2.html">月球观光</a>
+					</li>
+					<li>
+						<a href="main3.html">科学任务</a>
+					</li>
+					<li>
+						<a href="main4.html">揭开面纱</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<section>
+		<h2>月球观光</h2>
+		<video controls>
+			<source src="video/landing.mp4" type="video/mp4">
+		</video>
+		<p>目前，全球共进行了129次月球探测活动，其中成功或基本成功66次，失败63次，成功率仅有51%。仅有美苏成功实施13次无人月球表面软着陆；只有美国实现了载人登月，苏联开展了两次月面无人巡视探测任务。[详细]</p>
+		<p>&ldquo;嫦娥三号&rdquo;怎么着陆呢？首先它从地球上飞过去要被月球抓住，跑得太快飞跑了，跑得太慢撞上去了，所以一定要恰到好处。速度、距离要刚好飞到月亮边，被月亮抓住，变成月亮的卫星。</p>
+		<p>软着陆月球很难，主要问题是月球是真空，不能用降落伞，不能够慢悠悠地落下去，要是掉下去，肯定砸碎了。这时候就需要反推火箭会帮助嫦娥三号慢慢减速，减到距地面约的4米地方，速度为零时自由落体下落。</p>
+		<p>软着陆另一大难点是会受地形影响。因为月球表面并不平坦，虽然嫦娥二号传回了高分辨率的照片，但仍不能保证呈现所有石块和深坑。一些半米一下甚至几厘米的岩石很难办法辨别，也容易导致翻车。</p>
+		<p>硬着陆的探测器常常承载着&ldquo;自杀式科学任务&rdquo;，具体方式是将探测器（未经专门减速装置的减速，以较大速度直接）撞击到月球表面。一类硬着陆任务是为了更近距离的拍摄月球画面，比如印度的月船1号在接近月球的过程中探测器将会不断对月球进行拍摄传回地球，以增加人类对月球的了解。还有的是针对特定物质的实验，2009年美国发射的月球坑观测和传感卫星（LRO）是针对月球永久性阴暗区陨坑的第一次实地研究，如果坑底有水存在，水会因此次撞击被抛到空中。试验结果是碰撞在月球南极寒冷的永久暗陨坑中，撞击出冰水物质。</p>
+		<p>相比而言，软着陆是更直接的月表探测，也更有风险，它是指将探测器（经专门减速装置减速后，以一定的速度安全）撞击到月球表面着陆后拍摄照片、传送资料、进行研究测试。</p>
+
+
+
+	</section>
+	<script type="text/javascript" src="js/jquery.js"></script>
+</body>
+
+</html>

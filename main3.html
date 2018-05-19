@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>漫步月球</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/swiper.css">
+	<style>
+		html,
+		body {
+			height: 100%;
+		}
+
+		h1,
+		h2 {
+			font-weight: normal;
+		}
+
+		body {
+			padding: 0;
+			margin: 0;
+			margin: 0 auto;
+			max-width: 640px;
+			min-width: 300px;
+			font-family: "微软雅黑", "黑体", "宋体";
+		}
+
+
+
+		section {
+			padding: 0 10px;
+		}
+
+		p {
+			font-size: 16px;
+			line-height: 1.5;
+		}
+
+		section img {
+			max-width: 100%;
+			height: auto;
+		}
+
+		section video {
+			max-width: 100%;
+			height: auto;
+		}
+
+
+		#nav {
+			width: 30px;
+			height: 30px;
+			box-sizing: border-box;
+			background-color: #666;
+			border-radius: 50%;
+			position: fixed;
+			right: 15px;
+			bottom: 10px;
+			z-index: 999;
+		}
+
+		
+	</style>
+
+</head>
+
+<body>
+	<div id="nav">
+		<div class="fat-nav">
+			<div class="fat-nav__wrapper">
+				<ul>
+					<li>
+						<a href="index.html">首页</a>
+					</li>
+					<li>
+						<a href="main1.html">月兔现身</a>
+					</li>
+					<li>
+						<a href="main2.html">月球观光</a>
+					</li>
+					<li>
+						<a href="main3.html">科学任务</a>
+					</li>
+					<li>
+						<a href="main4.html">揭开面纱</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<section>
+		<h2>科学任务</h2>
+		<div class="swiper-container">
+			<!-- Additional required wrapper -->
+			<div class="swiper-wrapper">
+				<!-- Slides -->
+				<div class="swiper-slide">
+					<img src="images/photo01.jpg" width="1000" height="665" />
+				</div>
+				<div class="swiper-slide">
+					<img src="images/photo02.jpg" width="1000" height="673" />
+				</div>
+				<div class="swiper-slide">
+					<img src="images/photo03.jpg" width="1920" height="1080" />
+				</div>
+			</div>
+			<!-- If we need pagination -->
+			<div class="swiper-pagination"></div>
+		</div>
+		<p>在月球上&ldquo;玉兔&rdquo;的移动速度可能会超出想象，但不是快而是慢，它的时速是大约200米。</p>
+		<p>不过，玉兔的高性能是体现在越障能力和通过性，而不是追求高速度上。在巡视的3个月中，月球车将依靠各种先进设备对月表进行三维光学成像、红外光谱分析，开展月壤厚度和结构的科学探测，现场分析月表物质的主要元素。月球车下装了一台雷达，可主动发射雷达波来探测二三十米厚的土壤、结构变化，同时还可测地下100米深次表层的结构，这是世界上其他国家目前没有做过的。</p>
+		<p>苏联月球车1号于1970年11月17日由月球17号送上月球，一直在雨海地区工作至1971年10月4日。一共在月球进行了多次巡游，总行程10540米。拍摄了2万多张照片，对500个地点进行了土壤物理测试，25个地点进行了土壤化学分析。总考察面积接近8万平方米。</p>
+		<p>尽管阿波罗11号就使用了月球车，但首次载人月球车直到1971年7月31日，也就是阿波罗15号登上月球的第二天，才开始使用。宇航员驾驶月球车前往降落地点3公里外的地方考察并采集样本，然后再到另一处地点考察，然后驱车返回登月舱。两位美国宇航员在月面逗留三天，舱外活动18小时37分，驱车行进27公里，收集了约77公斤月岩。</p>
+
+
+	</section>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fatNav.js"></script>
+
+	<script>        
+		var mySwiper = new Swiper('.swiper-container', {
+			// If we need pagination
+			pagination: '.swiper-pagination',
+		})
+
+		
+	</script>
+</body>
+
+</html>

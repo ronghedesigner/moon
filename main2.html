@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<title>漫步月球</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="css/swiper.min.css" rel="stylesheet" type="text/css">
+	<link href="css/swiper.css" rel="stylesheet" type="text/css">
 	<style>
 		html,
 		body {
@@ -45,7 +45,7 @@
 		}
 
 		p {
-			font-size: 16px;
+			font-size: 14px;
 			line-height: 1.5;
 		}
 
@@ -97,13 +97,31 @@
 	
 
 	<section>
-		<h2>月球观光</h2>
+		<h2>Part 2 | 月球观光</h2>
+		<p>目前，全球共进行了129次月球探测活动，其中成功或基本成功66次，失败63次，成功率仅有51%。仅有美苏成功实施13次无人月球表面软着陆；只有美国实现了载人登月，苏联开展了两次月面无人巡视探测任务。</p>
 		<video controls>
-			<source src="video/landing.mp4" type="video/mp4">
+			<source src="video/news02.mp4" type="video/mp4">
 		</video>
-		<p>目前，全球共进行了129次月球探测活动，其中成功或基本成功66次，失败63次，成功率仅有51%。仅有美苏成功实施13次无人月球表面软着陆；只有美国实现了载人登月，苏联开展了两次月面无人巡视探测任务。[详细]</p>
+		
 		<p>&ldquo;嫦娥三号&rdquo;怎么着陆呢？首先它从地球上飞过去要被月球抓住，跑得太快飞跑了，跑得太慢撞上去了，所以一定要恰到好处。速度、距离要刚好飞到月亮边，被月亮抓住，变成月亮的卫星。</p>
 		<p>软着陆月球很难，主要问题是月球是真空，不能用降落伞，不能够慢悠悠地落下去，要是掉下去，肯定砸碎了。这时候就需要反推火箭会帮助嫦娥三号慢慢减速，减到距地面约的4米地方，速度为零时自由落体下落。</p>
+		<div class="swiper-container">
+			<!-- Additional required wrapper -->
+			<div class="swiper-wrapper">
+				<!-- Slides -->
+				<div class="swiper-slide">
+					<img src="images/photo01.jpg" width="1000" height="665" />
+				</div>
+				<div class="swiper-slide">
+					<img src="images/photo02.jpg" width="1000" height="673" />
+				</div>
+				<div class="swiper-slide">
+					<img src="images/photo03.jpg" width="1920" height="1080" />
+				</div>
+			</div>
+			<!-- If we need pagination -->
+			<div class="swiper-pagination"></div>
+		</div>
 		<p>软着陆另一大难点是会受地形影响。因为月球表面并不平坦，虽然嫦娥二号传回了高分辨率的照片，但仍不能保证呈现所有石块和深坑。一些半米一下甚至几厘米的岩石很难办法辨别，也容易导致翻车。</p>
 		<p>硬着陆的探测器常常承载着&ldquo;自杀式科学任务&rdquo;，具体方式是将探测器（未经专门减速装置的减速，以较大速度直接）撞击到月球表面。一类硬着陆任务是为了更近距离的拍摄月球画面，比如印度的月船1号在接近月球的过程中探测器将会不断对月球进行拍摄传回地球，以增加人类对月球的了解。还有的是针对特定物质的实验，2009年美国发射的月球坑观测和传感卫星（LRO）是针对月球永久性阴暗区陨坑的第一次实地研究，如果坑底有水存在，水会因此次撞击被抛到空中。试验结果是碰撞在月球南极寒冷的永久暗陨坑中，撞击出冰水物质。</p>
 		<p>相比而言，软着陆是更直接的月表探测，也更有风险，它是指将探测器（经专门减速装置减速后，以一定的速度安全）撞击到月球表面着陆后拍摄照片、传送资料、进行研究测试。</p>
@@ -112,6 +130,15 @@
 
 	</section>
 	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+	<script>        
+		var mySwiper = new Swiper('.swiper-container', {
+			// If we need pagination
+			pagination: '.swiper-pagination',
+		})
+
+
+	</script>
 </body>
 
 </html>

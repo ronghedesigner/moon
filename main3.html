@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<title>漫步月球</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/swiper.css">
+	<link href="css/swiper.css" rel="stylesheet" type="text/css">
 	<style>
 		html,
 		body {
@@ -33,10 +33,15 @@
 		}
 
 		p {
-			font-size: 16px;
+			font-size: 14px;
 			line-height: 1.5;
 		}
-
+		.caption {
+			font-size: 12px;
+			font-family: "宋体";
+			color: #999;
+			text-align: center;
+		}
 		section img {
 			max-width: 100%;
 			height: auto;
@@ -46,55 +51,61 @@
 			max-width: 100%;
 			height: auto;
 		}
-
-
-		
-
-		
 	</style>
 
 </head>
 
 <body>
-	
+
 
 	<section>
-		<h2>科学任务</h2>
+		<h2>Part 3 | 科学任务</h2>
+		<p>在月球上&ldquo;玉兔&rdquo;的移动速度可能会超出想象，但不是快而是慢，它的时速是大约200米。</p>
 		<div class="swiper-container">
 			<!-- Additional required wrapper -->
 			<div class="swiper-wrapper">
 				<!-- Slides -->
 				<div class="swiper-slide">
-					<img src="images/photo01.jpg" width="1000" height="665" />
+					<img src="images/photo05.jpg" width="1000" height="665" />
 				</div>
 				<div class="swiper-slide">
-					<img src="images/photo02.jpg" width="1000" height="673" />
+					<img src="images/photo06.jpg" width="1000" height="673" />
 				</div>
 				<div class="swiper-slide">
-					<img src="images/photo03.jpg" width="1920" height="1080" />
+					<img src="images/photo07.jpg" width="1920" height="1080" />
 				</div>
 			</div>
 			<!-- If we need pagination -->
 			<div class="swiper-pagination"></div>
 		</div>
-		<p>在月球上&ldquo;玉兔&rdquo;的移动速度可能会超出想象，但不是快而是慢，它的时速是大约200米。</p>
+		<p class="caption">△科学任务</h3>
+		
 		<p>不过，玉兔的高性能是体现在越障能力和通过性，而不是追求高速度上。在巡视的3个月中，月球车将依靠各种先进设备对月表进行三维光学成像、红外光谱分析，开展月壤厚度和结构的科学探测，现场分析月表物质的主要元素。月球车下装了一台雷达，可主动发射雷达波来探测二三十米厚的土壤、结构变化，同时还可测地下100米深次表层的结构，这是世界上其他国家目前没有做过的。</p>
 		<p>苏联月球车1号于1970年11月17日由月球17号送上月球，一直在雨海地区工作至1971年10月4日。一共在月球进行了多次巡游，总行程10540米。拍摄了2万多张照片，对500个地点进行了土壤物理测试，25个地点进行了土壤化学分析。总考察面积接近8万平方米。</p>
 		<p>尽管阿波罗11号就使用了月球车，但首次载人月球车直到1971年7月31日，也就是阿波罗15号登上月球的第二天，才开始使用。宇航员驾驶月球车前往降落地点3公里外的地方考察并采集样本，然后再到另一处地点考察，然后驱车返回登月舱。两位美国宇航员在月面逗留三天，舱外活动18小时37分，驱车行进27公里，收集了约77公斤月岩。</p>
 
-
+		<p>·观天</p>
+		<p>装置名称：天文月基望远镜</p>
+		<p>【专家解析】在月亮上观天文是世界上很多天文学家最想做的事情之一。月基天文望远镜，相当于人类把&ldquo;天文台&rdquo;架到了月球上。在月球观测天空，观测星星，研究星系、恒星的活动。假如实现了，一定会有很多新的发现。</p>
+		<p>月基望远镜由望远镜主体、反射镜转台组成。对各种天文变源的亮度变化行为进行长时间连续监测，然后拍照把数据传回地球。我们形象称之为&ldquo;巡天&rdquo;。</p>
+		<p>·看地</p>
+		<p>装置名称：极紫外相机</p>
+		<p>【专家解析】美国曾经在地球轨道上用卫星观测地球等离子体层，只是从赤道附近过境，没有宽阔的视场，只能看到局部。</p>
+		<p>嫦娥三号月面软着陆后，离地球38万公里，能够看到地球等离子层的全貌。通过对地球周围的等离子体层产生的辐射进行全方位、长期的观测研究，获取地球等离子体层三维图像，有助于了解太阳和地球的相互关系。</p>
+		<p>有观点认为，地球上一些自然灾害与地球等离子体层有关，所以相关研究具有科学意义。</p>
+		<p>·探月</p>
+		<p>装置名称：测月雷达</p>
+		<p>【专家解析】嫦娥三号巡视器的&ldquo;腹部&rdquo;有一台测月雷达。巡视器在月面行走，测月雷达可以测月球地底下30米深土壤层的结构和100米深的次表层结构。这个是国外没有做过的。</p>
 	</section>
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/swiper.min.js"></script>
-	<script type="text/javascript" src="js/jquery.fatNav.js"></script>
-
 	<script>        
 		var mySwiper = new Swiper('.swiper-container', {
 			// If we need pagination
 			pagination: '.swiper-pagination',
 		})
 
-		
+
 	</script>
 </body>
 

@@ -5,15 +5,18 @@
 	<meta charset="utf-8">
 	<title>漫步月球</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/jquery.fatNav.css">
 	<style>
 		html,
 		body {
+			padding: 0;
+			margin: 0;
 			height: 100%;
 		}
 
 		h1,
 		h2 {
-			font-weight: normal;
+			font-weight: normal;		
 		}
 
 		.caption {
@@ -51,18 +54,51 @@
 			max-width: 100%;
 			height: auto;
 		}
+		#nav {
+			width: 30px;
+			height: 30px;
+			box-sizing: border-box;
+			background-color: #666;
+			border-radius: 50%;
+			position: fixed;
+			right: 15px;
+			bottom: 10px;
+		}
 	</style>
 </head>
 
 <body>
-
+	<div id="nav">
+		<div class="fat-nav">
+			<div class="fat-nav__wrapper">
+				<ul>
+					<li>
+						<a href="index.html">首页</a>
+					</li>
+					<li>
+						<a href="main1.html">月兔现身</a>
+					</li>
+					<li>
+						<a href="main2.html">月球观光</a>
+					</li>
+					<li>
+						<a href="main3.html">科学任务</a>
+					</li>
+					<li>
+						<a href="main4.html">揭开面纱</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 	<section>
 		<h2>Part 1 | 月兔现身</h2>
-		<p>&ldquo;玉兔号&rdquo;月球车，重达140公斤，呈长方形盒状，肩部有两片可以打开的太阳能电池帆板；腿部是六个轮状的移动装置；此外，其还有一个长长的&ldquo;耳朵&rdquo;——地月对话通讯天线；4只敏锐的&ldquo;眼睛&rdquo;——头顶的导航相机与前后方的避障相机，遇到超过20度的斜坡、高于20厘米的石块或直径大于2米的撞击坑，能够自主判断安全避让；还有一只灵巧的&ldquo;胳膊&rdquo;——负责钻孔、研磨和采样的机械臂……</p>
+		<p>&ldquo;玉兔号&rdquo;月球车，重达140公斤，呈长方形盒状，肩部有两片可以打开的太阳能电池帆板；腿部是六个轮状的移动装置；此外，其还有一个长长的&ldquo;耳朵&rdquo;——地月对话通讯天线；4只敏锐的&ldquo;眼睛&rdquo;——头顶的导航相机与前后方的避障相机，遇到超过20度的斜坡、高于20厘米的石块或直径大于2米的撞击坑，能够自主判断安全避让；还有一只灵巧的&ldquo;胳膊&rdquo;——负责钻孔、研磨和采样的机械臂
 		<img src="images/photo01.jpg"  />
+		
 		<p class="caption">△太空漫步</h3>
 		<p>虽然&ldquo;玉兔&rdquo;带有太阳能电池板，但由于在月夜中月球是照不到太阳的，太阳能电池板不能工作，这时候月夜的气温会下降到-100多度，连金属都会冻裂，所以月夜生存就成了另一个难题。&ldquo;玉兔&rdquo;携带了核燃料电池，在月夜的时候核电池保证了月球车的正常生存。这也是在中国第一次把核电池送上太空。</p>
-		<video controls poster="images/poster01.jpg">
+		<video  controls poster="images/poster01.jpg" x5-playsinline="" playsinline="" webkit-playsinline="" >
 			<source src="video/news01.mp4" type="video/mp4">
 		</video>
 		<p>在这次&ldquo;嫦娥三号&rdquo;的月球车研制中，履带式设计早早出局。在此前的月球车范例中，它也鲜有出现。主要原因有二：</p>
@@ -76,7 +112,12 @@
 
 
 	<script type="text/javascript" src="js/jquery.js"></script>
-
+	<script src="js/jquery.fatNav.js"></script>
+	<script>
+		$(document).ready(function () {
+			$.fatNav();
+		})
+	</script>
 </body>
 
 </html>

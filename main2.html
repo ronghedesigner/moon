@@ -6,6 +6,7 @@
 	<title>漫步月球</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="css/swiper.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/jquery.fatNav.css">
 	<style>
 		html,
 		body {
@@ -86,12 +87,44 @@
 		.updownAni {
 			animation: updown 1s infinite alternate;
 		}
+		#nav {
+			width: 30px;
+			height: 30px;
+			box-sizing: border-box;
+			background-color: #666;
+			border-radius: 50%;
+			position: fixed;
+			right: 15px;
+			bottom: 10px;
+		}
 	</style>
 
 </head>
 
 <body>
-	<img src="images/photo01.jpg" alt="" style="display: none">
+	<div id="nav">
+		<div class="fat-nav">
+			<div class="fat-nav__wrapper">
+				<ul>
+					<li>
+						<a href="index.html">首页</a>
+					</li>
+					<li>
+						<a href="main1.html">月兔现身</a>
+					</li>
+					<li>
+						<a href="main2.html">月球观光</a>
+					</li>
+					<li>
+						<a href="main3.html">科学任务</a>
+					</li>
+					<li>
+						<a href="main4.html">揭开面纱</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 
 	<section>
 		<h2>Part 2 | 月球观光</h2>
@@ -129,6 +162,12 @@
 	</section>
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/swiper.min.js"></script>
+	<script src="js/jquery.fatNav.js"></script>
+	<script>
+		$(document).ready(function () {
+			$.fatNav();
+		})
+	</script>
 	<script>        
 		var mySwiper = new Swiper('.swiper-container', {
 			// If we need pagination
